@@ -99,7 +99,7 @@ DATABASES = {
 #     }
 # }
 
-DATABASES["default"] = dj_database_url.parse("postgresql://bloguser:XfUZYHVIBtkuVVGLncTKyvnlCURHkhJP@dpg-cu2dj8qj1k6c73cje3lg-a.oregon-postgres.render.com/blogdb_f3lc")
+DATABASES["default"] = dj_database_url.parse("postgresql://bloguser:XfUZYHVIBtkuVVGLncTKyvnlCURHkhJP@dpg-cu2dj8qj1k6c73cje3lg-a/blogdb_f3lc")
 
 
 # Password validation
