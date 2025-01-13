@@ -1,0 +1,56 @@
+<!-- blog/templates/blog/chart.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plotly.js Grafik</title>
+
+    <!-- Plotly.js CDN -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <style>
+        /* Basit stil */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        #graph {
+            margin: 0 auto;
+            max-width: 800px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Basit Plotly.js Grafik</h1>
+    <div id="graph"></div>
+
+    <script>
+        var data = [{
+            x: ['A', 'B', 'C', 'D', 'E'],
+            y: [10, 14, 18, 24, 30],
+            type: 'bar'
+        }];
+
+        var layout = {
+            title: 'Basit Çubuk Grafiği',
+            xaxis: {
+                title: 'Kategori'
+            },
+            yaxis: {
+                title: 'Değer'
+            }
+        };
+
+        Plotly.newPlot('graph', data, layout);
+    </script>
+</body>
+</html>
